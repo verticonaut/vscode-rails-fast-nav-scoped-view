@@ -5,4 +5,4 @@ node_modules
 !.vscode
 dist/
 test-resources
-*.vsix
+

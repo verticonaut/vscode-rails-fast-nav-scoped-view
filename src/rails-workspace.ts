@@ -43,6 +43,10 @@ export class RailsWorkspace {
   }
 
   get viewsPath(): string {
+    const scopedViews = vscode.workspace.getConfiguration('rails').get('scopedViews', false);
+    if (scopedViews) {
+      return path.join(this.appPath, 'views', 'controllers');
+    }
     return path.join(this.appPath, 'views');
   }
 

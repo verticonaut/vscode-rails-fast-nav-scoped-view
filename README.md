@@ -1,5 +1,5 @@
 # Rails Fast Nav ![Test status](https://img.shields.io/github/workflow/status/jemmyw/vscode-rails-fast-nav/Test.png)
-  
+
 Commands to move between files in a Rails application.
 
 ## Features
@@ -30,3 +30,9 @@ Change the default view extension from `html.erb`:
 ```json
 "rails.viewFileExtension": "json.jbuilder"
 ```
+
+
+Publish with
+PRECOND> npm install --save-dev @vscode/vsce
+
+>npx @vscode/vsce package
